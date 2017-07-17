@@ -1,6 +1,6 @@
 @charset "utf-8";
 body {
-  background: #4193f7;
+  background: #f1f1f1;
   min-width: 1000px;
 }
 .head {
@@ -10,7 +10,7 @@ body {
 }
 .menu {
   height: 40px;
-  background: url("../images/menubg.jpg") repeat-x;
+  background: #c62800;
 }
 .menu ul {
   display: block;
@@ -29,6 +29,7 @@ body {
   color: #ffffff;
   font-size: 14px;
   display: block;
+  font-weight: bold;
 }
 .menu ul li a:hover {
   background: url("../images/menubgc.jpg") repeat-x;
@@ -215,6 +216,45 @@ body {
 .news-list {
   padding: 10px;
 }
+.news-list .img-list {
+  width: 100%;
+  height: 110px;
+}
+.news-list .img-list dt {
+  border: 1px solid #ededed;
+  width: 170px;
+  height: 100px;
+  padding: 5px;
+  float: left;
+}
+.news-list .img-list dt .img {
+  display: block;
+  width: 170px;
+  height: 100px;
+  overflow: hidden;
+}
+.news-list .img-list dt .img img {
+  width: 170px;
+  height: 100px;
+  transition: .5s;
+}
+.news-list .img-list dt .img img:hover {
+  transform: scale(1.1);
+}
+.news-list .img-list dd {
+  float: right;
+  width: 170px;
+  height: 52px;
+  border-bottom: 1px dashed #ededed;
+}
+.news-list .img-list dd a {
+  font-size: 12px;
+  line-height: 26px;
+  height: 52px;
+  color: #444444;
+  overflow: hidden;
+  display: block;
+}
 .news-list li {
   border-bottom: 1px dashed #efefef;
   height: 28px;
@@ -270,7 +310,7 @@ body {
   width: 100%;
 }
 .index-special .container {
-  height: 120px;
+  height: 100px;
   display: block;
 }
 .index-column3-contain .column {
